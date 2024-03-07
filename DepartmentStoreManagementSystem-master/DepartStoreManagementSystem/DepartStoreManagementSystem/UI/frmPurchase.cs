@@ -100,7 +100,7 @@ namespace DepartStoreManagementSystem.UI
             //MessageBox.Show("I am Clicked");
             TransactionClass transaction = new TransactionClass();
             transaction.TransactionType = labelPurchase.Text.Trim();
-            transaction.TransactioDate = DateTime.Now;
+            transaction.TransactioDate = DateTime.UtcNow;
             transaction.SysUser = "Admin";
             transaction.GrandTotal = decimal.Parse(labelGrandTotal.Text);
             transaction.TransactionDetails = dtTransaction;
