@@ -45,7 +45,7 @@ namespace DepartStoreManagementSystem.UI
             //Get Value from Text Box
             string value = textBoxProductID.Text.Trim();
 
-            if(value=="")
+            if(string.IsNullOrEmpty(value))
             {
                 labelProductName.Text = "";
                 textBoxRate.Text = "";

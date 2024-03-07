@@ -23,7 +23,7 @@ namespace DepartStoreManagementSystem.UI
         {
             int UserID = 0;
             //Getting Values from UI
-            if(textBoxUserID.Text.Trim()!="")
+            if(!string.IsNullOrEmpty(textBoxUserID.Text.Trim()))
             {
                 UserID = int.Parse(textBoxUserID.Text.Trim());
             }
